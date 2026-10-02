@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Regisztráció</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+             Tech<b>Shop</b>
+        </div>
+
+        <nav class="nav">
+            <a href="#">Főoldal</a>
+            <a href="#">Termékek</a>
+            <a href="#">Akció</a>
+            <a href="#">Kapcsolat</a>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+
+        <h1 class="title">Regisztráció</h1>
+
+        <div class="sub">
+            Hozd létre TechShop fiókodat!
+        </div>
+
+
+        <form class="card">
+
+
+            <section class="section">
+
+                <div class="head">
+                    <span class="ico">♟</span>
+                    Személyes adatok
+                </div>
+
+                <div class="body">
+
+                    <div class="grid">
+
+                        <div class="field">
+
+                            <label>
+                                Teljes név
+                                <span class="req">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Pl. Kovács Anna"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                E-mail cím
+                                <span class="req">*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                placeholder="pelda@email.hu"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Jelszó
+                                <span class="req">*</span>
+                            </label>
+
+                            <input
+                                type="password"
+                                minlength="8"
+                                required
+                            >
+
+                            <div class="note">
+                                A jelszónak legalább 8 karakterből kell állnia.
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Jelszó újra
+                                <span class="req">*</span>
+                            </label>
+
+                            <input
+                                type="password"
+                                minlength="8"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Születési dátum
+                            </label>
+
+                            <input type="date">
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Telefonszám
+                            </label>
+
+                            <input
+                                type="tel"
+                                placeholder="+36 20 123 4567"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Nem
+                            </label>
+
+                            <div class="gender">
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        checked
+                                    >
+                                    Férfi
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                    >
+                                    Nő
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                    >
+                                    Nem szeretném megadni
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Lakóhely
+                            </label>
+
+                            <select>
+
+                                <option>-- Válassz --</option>
+                                <option>Budapest</option>
+                                <option>Pest</option>
+                                <option>Baranya</option>
+                                <option>Fejér</option>
+                                <option>Győr-Moson-Sopron</option>
+                                <option>Hajdú-Bihar</option>
+                                <option>Veszprém</option>
+                                <option>Bács-Kiskun</option>
+                                <option>Békés</option>
+
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="section">
+
+                <div class="head">
+                    <span class="ico">🚚</span>
+                    Szállítási adatok
+                </div>
+
+                <div class="body">
+
+                    <div class="grid">
+
+                        <div class="field">
+
+                            <label>
+                                Irányítószám
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Pl. 1234"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Település
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Pl. Budapest"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Utca
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Pl. Kossuth Lajos utca"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Házszám
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Pl. 12."
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="section">
+
+                <div class="head">
+                    <span class="ico">▤</span>
+                    Egyéb beállítások
+                </div>
+
+                <div class="body">
+
+                    <div class="check">
+
+                        <input
+                            type="checkbox"
+                            id="newsletter"
+                        >
+
+                        <label for="newsletter">
+                            Szeretnék hírlevelet kapni az
+                            akciókról és újdonságokról.
+                        </label>
+
+                    </div>
+
+
+                    <div class="check">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                            checked
+                        >
+
+                        <label for="terms">
+
+                            Elfogadom az
+
+                            <span class="terms">
+                                Általános Szerződési Feltételeket
+                            </span>
+
+                            (ÁSZF).
+
+                            <span class="req">*</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Megjegyzés
+                        </label>
+
+                        <textarea
+                            maxlength="300"
+                            placeholder="Ide írhatod a megjegyzésedet (maximum 300 karakter) ..."
+                        ></textarea>
+
+                        <div class="counter">
+                            0 / 300
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <div class="buttons">
+
+                <button
+                    class="submit"
+                    type="submit"
+                >
+                    ♟+　Regisztráció
+                </button>
+
+
+                <button
+                    class="reset"
+                    type="reset"
+                >
+                    ↻　Űrlap törlése
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

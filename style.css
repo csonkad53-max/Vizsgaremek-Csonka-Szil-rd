@@ -1,0 +1,347 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    color: #172c43;
+}
+
+
+
+.navbar {
+    height: 50px;
+    background: #142b40;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+    gap: 45px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo b {
+    color: #1689ed;
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+    font-size: 13px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #1689ed;
+}
+
+.icons {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+
+
+main {
+    padding: 17px 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sub {
+    text-align: center;
+    color: #667383;
+    font-size: 18px;
+    margin: 3px 0 12px;
+}
+
+
+
+.card {
+    max-width: 755px;
+    margin: auto;
+
+    background: white;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 9px;
+
+    box-shadow: 0 3px 10px #142b4015;
+
+    padding: 9px 12px 12px;
+}
+
+.section {
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+
+.head {
+    height: 39px;
+
+    background: linear-gradient(
+        #e5f3ff,
+        #d9edfc
+    );
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 15px;
+
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.head .ico {
+    font-size: 21px;
+    color: #1376d4;
+}
+
+
+
+.body {
+    padding: 11px 14px;
+}
+
+
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px 27px;
+}
+
+
+
+.field label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.req {
+    color: #e92929;
+}
+
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    border: 1px solid #cbd2da;
+    border-radius: 5px;
+
+    padding: 7px 10px;
+
+    font: 13px Arial;
+
+    color: #4e5967;
+
+    outline: none;
+}
+
+input,
+select {
+    height: 30px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1683df;
+
+    box-shadow:
+        0 0 0 2px #1683df20;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #89929d;
+}
+
+
+/* =========================
+   JELSZÓ
+========================= */
+
+.note {
+    font-size: 11px;
+
+    color: #697480;
+
+    margin-top: 4px;
+}
+
+
+.gender {
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+.gender label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-weight: normal;
+
+    margin: 0;
+
+    font-size: 13px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+
+    accent-color: #0876df;
+}
+
+
+.check {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+}
+
+.terms {
+    color: #0876df;
+
+    text-decoration: underline;
+}
+
+
+
+textarea {
+    height: 59px;
+
+    resize: vertical;
+
+    margin-top: 2px;
+}
+
+.counter {
+    text-align: right;
+
+    font-size: 11px;
+
+    color: #697480;
+}
+
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 8px;
+}
+
+button {
+    height: 41px;
+
+    border: 0;
+
+    border-radius: 5px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    padding: 0 28px;
+
+    cursor: pointer;
+}
+
+.submit {
+    background: #0876df;
+}
+
+.reset {
+    background: #687786;
+}
+
+.submit:hover {
+    background: #0669c8;
+}
+
+.reset:hover {
+    background: #596774;
+}
+
+
+
+@media (max-width: 760px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .gender {
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+}
